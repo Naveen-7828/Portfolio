@@ -1,196 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Naveen | Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Naveen | Portfolio</title>
 
-<link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
-<div class="background"></div>
+  <div class="background"></div>
 
-<a href="mailto:naveen.mj2.45@gmail.com" class="contact-float">
-    <i class="fas fa-envelope"></i>
-</a>
+  <a href="#contact" class="contact-float"><i class="fas fa-envelope"></i></a>
+  <a href="index.html" class="home-circle"><i class="fas fa-house"></i></a>
 
-<nav class="navbar">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#education">Education</a>
-    <a href="#projects">Projects</a>
-    <a href="#certifications">Certificates</a>
-    <a href="#contact">Contact</a>
-</nav>
+  <div class="resume-wrap">
+    <a href="resume.html" class="btn-primary">
+      <i class="fas fa-download"></i> View Resume
+    </a>
+  </div>
 
-<section id="home" class="hero">
+  <!-- HERO -->
+  <header>
+    <section class="hero">
+      <img class="profile-image" src="https://big-magenta-mtgvk1kc.edgeone.app/Naveen@78.jpeg" alt="Naveen">
 
-    <div class="hero-left">
+      <h2>Hi, I'm Naveen👨‍💼</h2>
 
-        <h1>NAVEEN</h1>
+      <div class="typing-text"><span id="typing"></span></div>
 
-        <div class="typing-text">
-            <span id="typing"></span>
-        </div>
+      <p>
+        B.Tech Information Technology Graduate from Dr. M.G.R. Educational and Research Institute.
+        Passionate about developing modern web applications using Java, SQL, Python and Web Technologies.
+      </p>
 
+      <nav class="navbar">
+        <a href="#about"><i class="fas fa-user"></i> About</a>
+        <a href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
+        <a href="#projects"><i class="fas fa-code"></i> Projects</a>
+        <a href="#certifications"><i class="fas fa-certificate"></i> Certification</a>
+        <a href="#contact"><i class="fas fa-mobile"></i> Contact</a>
+      </nav>
+    </section>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <section class="skills section">
+      <h2>My Skills</h2>
+      <div class="skill-container">
+        <div class="skill-card"><i class="fab fa-java"></i><h3>Java</h3></div>
+        <div class="skill-card"><i class="fas fa-globe"></i><h3>Web Tech</h3></div>
+        <div class="skill-card"><i class="fas fa-database"></i><h3>SQL</h3></div>
+        <div class="skill-card"><i class="fab fa-python"></i><h3>Python</h3></div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <div class="content-box">
         <p>
-            B.Tech Information Technology Graduate from
-            Dr. M.G.R. Educational and Research Institute.
-
-            Passionate about developing modern web applications
-            using Java, SQL, Python and Web Technologies.
+          I am Naveen, a B.Tech Information Technology graduate from Dr. M.G.R. Educational and Research Institute.
+          I completed Java Full Stack Development training and possess skills in Java, SQL, Python, HTML, CSS and JavaScript.
         </p>
+      </div>
+    </section>
 
-        <div class="quick-links">
-
-            <a href="#about" class="card">
-                <i class="fas fa-user"></i>
-                <h3>About</h3>
-            </a>
-
-            <a href="#education" class="card">
-                <i class="fas fa-graduation-cap"></i>
-                <h3>Education</h3>
-            </a>
-
-            <a href="#projects" class="card">
-                <i class="fas fa-code"></i>
-                <h3>Projects</h3>
-            </a>
-
-            <a href="#certifications" class="card">
-                <i class="fas fa-certificate"></i>
-                <h3>Certificates</h3>
-            </a>
-
-        </div>
-
-        <div class="home-buttons">
-
-            <a href="resume.pdf" class="btn-primary" target="_blank">
-                <i class="fas fa-file-download"></i>
-                Resume
-            </a>
-
-        </div>
-
-    </div>
-
-    <div class="hero-right">
-
-        <img
-        src="https://yielding-crimson-typ5qfwn.edgeone.app/Naveen@78.jpeg"
-        alt="Naveen"
-        class="profile-image">
-
-    </div>
-
-</section>
-
-<section id="about" class="section">
-
-    <h2>About Me</h2>
-
-    <div class="content-box">
-
-        <p>
-            I am Naveen, a B.Tech Information Technology graduate from
-            Dr. M.G.R. Educational and Research Institute.
-
-            I completed Java Full Stack Development training and possess
-            skills in Java, SQL, Python, HTML, CSS and JavaScript.
-        </p>
-
-    </div>
-
-</section>
-
-<section id="education" class="section">
-
-    <h2>Education</h2>
-
-    <div class="content-box">
-
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <div class="content-box">
         <h3>B.Tech Information Technology</h3>
-
         <p>Dr. M.G.R. Educational and Research Institute</p>
+        <p>2021 - 2025</p>
+        <p>CGPA: 7.59</p>
+      </div>
+    </section>
 
-        <p>Passed Out : 2025</p>
+    <section id="projects" class="section">
+      <h2>Projects</h2>
 
-    </div>
+      <div class="project-card">
+        <h3>Virtual Encyclopedia Using Augmented Reality</h3>
+        <p>Developed an AR-based educational application.</p>
+      </div>
 
-</section>
+      <div class="project-card">
+        <h3>Agri Traders E-Commerce Website</h3>
+        <p>Responsive e-commerce platform for agricultural products.</p>
+      </div>
+    </section>
 
-<section id="projects" class="section">
-
-    <h2>Projects</h2>
-
-    <div class="project-card">
-
-        <h3>Student Management System</h3>
-
-        <p>
-            CRUD application using Java and SQL.
-        </p>
-
-    </div>
-
-    <div class="project-card">
-
-        <h3>Portfolio Website</h3>
-
-        <p>
-            Personal website developed using
-            HTML, CSS and JavaScript.
-        </p>
-
-    </div>
-
-</section>
-
-<section id="certifications" class="section">
-
-    <h2>Certifications</h2>
-
-    <div class="content-box">
-
+    <section id="certifications" class="section">
+      <h2>Certifications</h2>
+      <div class="content-box">
         <h3>Java Full Stack Development</h3>
+        <p>Training in Java, SQL, HTML, CSS and JavaScript.</p>
+      </div>
+    </section>
 
-        <p>
-            Completed professional training in
-            Java, SQL, HTML, CSS and JavaScript.
-        </p>
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="content-box">
+        <p><i class="fas fa-envelope"></i> Email: naveen.mj2.45@gmail.com</p>
+        <p><i class="fas fa-phone"></i> Phone: 9363063276</p>
+        <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/naveen-m-5b4564373" target="_blank">View Profile</a></p>
+        <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/Naveen-7828" target="_blank">View Profile</a></p>
+      </div>
+    </section>
 
-    </div>
+  </main>
 
-</section>
-
-<section id="contact" class="section">
-
-    <h2>Contact</h2>
-
-    <div class="content-box">
-
-        <p>Email : naveen.mj2.45@gmail.com</p>
-
-        <p>Phone : 9363063276</p>
-
-    </div>
-
-</section>
-
-<footer>
+  <footer>
     <p>© 2025 Naveen | Java Full Stack Developer</p>
-</footer>
+  </footer>
 
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>

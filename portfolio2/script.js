@@ -1,65 +1,29 @@
-// Typing Effect
-
-const text = "Java Full Stack Developer";
+const text = "Java Full Stack Developer🖥️";
 let index = 0;
 
-function typeWriter() {
-
-    if (index < text.length) {
-
-        document.getElementById("typing").innerHTML += text.charAt(index);
-
-        index++;
-
-        setTimeout(typeWriter, 100);
-    }
+function typingEffect() {
+  if (index < text.length) {
+    document.getElementById("typing").innerHTML += text.charAt(index);
+    index++;
+    setTimeout(typingEffect, 50);
+  }
 }
-
-
-// Page Navigation
-
-function showPage(pageId) {
-
-    const pages = document.querySelectorAll(".page");
-
-    pages.forEach(page => {
-
-        page.classList.remove("active");
-
-    });
-
-    document
-        .getElementById(pageId)
-        .classList.add("active");
-
-}
-
-
-// Load Animations
 
 window.onload = () => {
+  typingEffect();
 
-    typeWriter();
+  const cards = document.querySelectorAll(
+    ".profile-image, .content-box, .project-card, .skill-card"
+  );
 
-    const elements = document.querySelectorAll(
-        ".card, .navbar a, .profile-image, .hero-left, .content-box"
-    );
+  cards.forEach((card, i) => {
+    card.style.opacity = "0";
+    card.style.transform = "translateY(40px)";
 
-    elements.forEach((element, i) => {
-
-        element.style.opacity = "0";
-        element.style.transform = "translateY(40px)";
-
-        setTimeout(() => {
-
-            element.style.transition = "all .8s ease";
-
-            element.style.opacity = "1";
-
-            element.style.transform = "translateY(0)";
-
-        }, i * 150);
-
-    });
-
+    setTimeout(() => {
+      card.style.transition = "all .7s ease";
+      card.style.opacity = "1";
+      card.style.transform = "translateY(0)";
+    }, i * 120);
+  });
 };
